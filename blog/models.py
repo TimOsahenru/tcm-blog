@@ -12,6 +12,8 @@ class Blog(models.Model):
     author = models.CharField(max_length=100, default="admin")
     title = models.CharField(max_length=300)
     content = RichTextField()
+    image = models.ImageField(upload_to="images/", null=True, blank=True)
+    # category
     created = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
