@@ -7,9 +7,9 @@ from django.views.generic import DetailView
 class BlogListView(ListView):
     model = Blog
     context_object_name = "blogs"
-    template_name = "../templates/blogs.html"
+    template_name = "../templates/blog.html"
     
     
 class BlogDetailView(DetailView):
     model = Blog
-    template_name = "../templates/blog-detail.html"
+    template_name = "../templates/detail.html"

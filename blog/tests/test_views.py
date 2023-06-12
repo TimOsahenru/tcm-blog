@@ -38,5 +38,5 @@ class TestBlogDetailViews(TestCase):
         response = self.client.get(url)
         
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, "../templates/blog-detail.html")
+        self.assertTemplateUsed(response, "../templates/detail.html")
         self.assertEqual(response.context["blog"], self.blog)
