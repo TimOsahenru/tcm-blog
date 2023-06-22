@@ -10,10 +10,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
-env  = environ.Env()
-environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
-SECRET_KEY = env("SECRET_KEY")
-DEBUG = env("DEBUG")
+# env  = environ.Env()
+# environ.Env.read_env(os.path.join(BASE_DIR, ".env"))
+# SECRET_KEY = env("SECRET_KEY")
+# DEBUG = env("DEBUG")
+
+SECRET_KEY = "django-insecure-a(n&y@6s_ohp(sz*t%_)msh@#*+tbg(fl%#z_k6yu%zrtkyh-^"
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
