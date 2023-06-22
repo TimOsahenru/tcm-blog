@@ -1,0 +1,7 @@
+blog/__pycache__
+tcm/__pycache__
+.env
+blog/migrations/__pycache__/
+blog/tests/__pycache__/
+blog/tests/__pycache__/
+venv/
